@@ -1,5 +1,7 @@
 # Mutual TLS using Openssl and Flask
 
+**Create `certs` folder after cloning repo and execute these commands**
+
 openssl req -nodes -new -x509 -days 365 -keyout ca.key -out ca-crt.pem -subj "/C=US/ST=CA/L=SanFrancisco/O=MyCompany/OU=ITDepartment/CN=localhost-ca"
 
 openssl req -nodes -new -keyout server.key -out server.csr -subj "/C=US/ST=CA/L=SanFrancisco/O=MyCompany/OU=ITDepartment/CN=localhost"
